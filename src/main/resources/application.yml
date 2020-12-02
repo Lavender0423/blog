@@ -1,0 +1,8 @@
+#数据库
+spring:
+  thymeleaf:
+    mode: HTML
+#    指定使用配置
+  profiles:
+    active: dev
+

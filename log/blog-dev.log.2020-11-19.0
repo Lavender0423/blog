@@ -1,0 +1,29 @@
+2020-11-19 16:25:16.409  INFO 5280 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 5280 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-11-19 16:25:16.442 DEBUG 5280 --- [restartedMain] com.lavender.blog.BlogApplication        : Running with Spring Boot v2.4.0, Spring v5.3.1
+2020-11-19 16:25:16.442  INFO 5280 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-11-19 16:25:16.489  INFO 5280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-19 16:25:16.490  INFO 5280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-19 16:25:17.157  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-19 16:25:17.175  INFO 5280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2020-11-19 16:25:17.951  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-19 16:25:17.965  INFO 5280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-19 16:25:17.966  INFO 5280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-19 16:25:18.053  INFO 5280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-19 16:25:18.053  INFO 5280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1562 ms
+2020-11-19 16:25:18.232  INFO 5280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-19 16:25:18.273  INFO 5280 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-19 16:25:18.370  INFO 5280 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-11-19 16:25:18.391  WARN 5280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-19 16:25:18.508  INFO 5280 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-11-19 16:25:18.782  INFO 5280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-19 16:25:18.783  WARN 5280 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-19 16:25:19.060  INFO 5280 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-11-19 16:25:20.545  INFO 5280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-11-19 16:25:20.608  INFO 5280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-19 16:25:20.610  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-19 16:25:20.610  INFO 5280 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-19 16:25:20.628  INFO 5280 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 4.883 seconds (JVM running for 6.116)
+2020-11-19 16:25:20.736  INFO 5280 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-19 16:25:20.756  INFO 5280 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-11-19 16:25:22.979  INFO 5280 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-19 16:25:22.987  INFO 5280 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'

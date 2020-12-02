@@ -1,0 +1,191 @@
+body{
+    background:url("../img/background_img/geometry2.png")
+}
+/*-------item-------*/
+.m-item{
+    margin-left: 4px;
+}
+/*-------padded------*/
+
+.m-padded-mini{
+    padding: 0.2em !important;
+}
+.m-padded-tiny{
+    padding: 0.3em !important;
+}
+.m-padded{
+    padding: 1em !important;
+}
+.m-padded-tb-mini{
+    padding-top:0.2em !important;
+    padding-bottom:0.2em !important;
+}
+.m-padded-tiny{
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+.m-padded-small{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded-tb{
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+.m-padded-tb-large{
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+.m-padded-tb-big{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-huge{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.m-padded-tb-massive{
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+.m-padded-lr-responsive{
+    padding-left: 4em!important;
+    padding-right: 4em!important;
+}
+
+/*-----------text----------*/
+
+.m-text-thin{
+    font-weight: 300 !important;
+
+}
+
+.m-text-spaced{
+    letter-spacing: 1px !important;
+
+}
+.m-text-lined{
+    line-height: 1.8 !important;
+}
+
+/*----------opacity-----------*/
+.m-opacity-mini{
+    opacity: 0.8 !important;
+}
+.m-opacity-tiny{
+    opacity: 0.6 !important;
+}
+/*---------display--------*/
+
+.m-inline-block{
+    display :inline-block !important;
+}
+
+.m-container{
+    max-width: 70em !important;
+    margin: auto !important;
+}
+/*用于博客详情页展示文章用*/
+.m-container-small{
+    max-width: 60em!important;
+    margin: auto!important;
+}
+
+.m-text{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8;
+}
+/*-------shadow-------*/
+/*控制阴影效果*/
+.m-shadow-small{
+    -webkit-box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+/*-----------margin-------------*/
+    /*控制博客块左边距*/
+.m-margin-l{
+    margin-left: 15px !important;
+}
+.m-margin-lr{
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+.m-margin-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+.m-margin{
+    margin-top: 0.8em !important;
+    margin-bottom: 0.8em !important;
+}
+.m-margin-top-small{
+    margin-top: 0.5em !important;
+}
+.m-margin-top{
+    margin-top: 1em !important;
+}
+.m-margin-top-large{
+    margin-top: 2em !important;
+}
+.m-margin-bottom-small{
+    margin-bottom: 0.5em!important;
+}
+
+/*-------------font_colour----------*/
+.m-black{
+    color: #333 !important;
+}
+.m-teal{
+    color: #00B5AD !important;
+}
+
+
+/*position*/
+.m-top-right{
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+/*tool bar layout*/
+.m-fixed{
+    position: fixed!important;
+    z-index:1!important;
+}
+
+.m-right-bottom{
+    bottom: 0!important;
+    right:0!important;
+}
+
+
+/*mobile*/
+/*set hot spot*/
+.m-mobile-show{
+    display: none!important;
+}
+@media screen and (max-width: 768px) {
+    .m-mobile-hide{
+        display:none !important;
+
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+    .m-padded-lr-responsive{
+        padding-left: 0em!important;
+        padding-right: 0em!important;
+    }
+    .m-mobile-lr-clear{
+        padding-left: 0em!important;
+        padding-right: 0em!important;
+        margin:auto!important;
+    }
+    .m-mobile-wide{
+        width: 100% !important;
+    }
+}
+
+
+

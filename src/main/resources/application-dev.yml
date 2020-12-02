@@ -1,0 +1,20 @@
+#开发环境
+#数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&charaterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  jpa:
+#    在开发环境可以更新数据库
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#日志
+logging:
+  level:
+    root: info
+    com.lavender.Blog: debug
+  file:
+    name: log/blog-dev.log

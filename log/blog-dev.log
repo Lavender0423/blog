@@ -1,0 +1,734 @@
+2020-12-01 11:43:51.784  INFO 7804 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 7804 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-12-01 11:43:51.789  INFO 7804 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-12-01 11:43:51.820  INFO 7804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-01 11:43:51.820  INFO 7804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-01 11:43:52.279  INFO 7804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-01 11:43:52.336  INFO 7804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2020-12-01 11:43:52.901  INFO 7804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-01 11:43:52.917  INFO 7804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-01 11:43:52.917  INFO 7804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 11:43:53.000  INFO 7804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-01 11:43:53.000  INFO 7804 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1180 ms
+2020-12-01 11:43:53.098  INFO 7804 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 11:43:53.137  INFO 7804 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-01 11:43:53.174  INFO 7804 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-01 11:43:53.260  INFO 7804 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-01 11:43:53.263  WARN 7804 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-01 11:43:53.330  INFO 7804 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-01 11:43:53.331  WARN 7804 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-01 11:43:53.516  INFO 7804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-01 11:43:53.690  INFO 7804 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-01 11:43:53.703  INFO 7804 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-01 11:43:53.801  INFO 7804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-01 11:43:53.834  INFO 7804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 11:43:53.836  INFO 7804 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-01 11:43:54.400  INFO 7804 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-01 11:43:54.407  INFO 7804 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-01 11:43:54.801  INFO 7804 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-01 11:43:54.808  INFO 7804 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 3.415 seconds (JVM running for 4.054)
+2020-12-01 12:27:50.992  INFO 7804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 12:27:50.992  INFO 7804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-01 12:27:50.993  INFO 7804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-01 12:27:51.089  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:27:51.090  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@7fe79361, {blogQuery=com.lavender.blog.vo.BlogQuery@7fe79361, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 12:27:51.194  WARN 7804 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 12:27:51.207  WARN 7804 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 12:27:51.213  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 12:27:52.116  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:27:52.116  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 12:27:52.129  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 12:27:53.792  INFO 7804 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:27:53.792  INFO 7804 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 12:27:53.823  INFO 7804 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 12:27:54.116  INFO 7804 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:27:54.117  INFO 7804 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 12:27:54.127  INFO 7804 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 12:28:33.285  INFO 7804 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:28:33.285  INFO 7804 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 12:28:33.312  INFO 7804 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 12:28:33.763  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:28:33.763  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 12:28:33.770  INFO 7804 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 12:29:39.277  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:29:39.277  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@1dce22d1, {blogQuery=com.lavender.blog.vo.BlogQuery@1dce22d1, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 12:29:39.303  INFO 7804 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 12:29:39.748  INFO 7804 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:29:39.748  INFO 7804 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 12:29:39.758  INFO 7804 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 12:29:41.524  INFO 7804 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:29:41.525  INFO 7804 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/35', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[35, {}]}
+2020-12-01 12:29:41.635  INFO 7804 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 12:29:41.984  INFO 7804 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 12:29:41.985  INFO 7804 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 12:29:41.993  INFO 7804 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 15:34:15.880  INFO 5428 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 5428 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-12-01 15:34:15.884  INFO 5428 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-12-01 15:34:15.947  INFO 5428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-01 15:34:15.947  INFO 5428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-01 15:34:16.575  INFO 5428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-01 15:34:16.660  INFO 5428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2020-12-01 15:34:17.507  INFO 5428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-01 15:34:17.519  INFO 5428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-01 15:34:17.519  INFO 5428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 15:34:17.632  INFO 5428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-01 15:34:17.632  INFO 5428 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1684 ms
+2020-12-01 15:34:17.750  INFO 5428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 15:34:17.804  INFO 5428 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-01 15:34:17.858  INFO 5428 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-01 15:34:18.032  INFO 5428 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-01 15:34:18.076  WARN 5428 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-01 15:34:18.152  INFO 5428 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-01 15:34:18.154  WARN 5428 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-01 15:34:18.533  INFO 5428 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-01 15:34:18.781  INFO 5428 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-01 15:34:18.796  INFO 5428 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-01 15:34:19.182  INFO 5428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-01 15:34:19.218  INFO 5428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 15:34:19.220  INFO 5428 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-01 15:34:19.525  INFO 5428 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-01 15:34:19.531  INFO 5428 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-01 15:34:20.038  INFO 5428 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-01 15:34:20.046  INFO 5428 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 4.657 seconds (JVM running for 5.4)
+2020-12-01 15:34:24.225  INFO 5428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 15:34:24.225  INFO 5428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-01 15:34:24.226  INFO 5428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2020-12-01 15:34:24.255  INFO 5428 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:34:24.255  INFO 5428 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 15:34:24.371  INFO 5428 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 15:34:24.968  INFO 5428 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:34:24.968  INFO 5428 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 15:34:24.980  INFO 5428 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 15:34:25.073  INFO 5428 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:34:25.073  INFO 5428 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 15:34:25.143  INFO 5428 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:blog :: commentList
+2020-12-01 15:37:45.622  INFO 2852 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 2852 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-12-01 15:37:45.624  INFO 2852 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-12-01 15:37:45.660  INFO 2852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-01 15:37:45.660  INFO 2852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-01 15:37:46.168  INFO 2852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-01 15:37:46.250  INFO 2852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+2020-12-01 15:37:46.859  INFO 2852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-01 15:37:46.865  INFO 2852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-01 15:37:46.866  INFO 2852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 15:37:46.954  INFO 2852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-01 15:37:46.954  INFO 2852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1293 ms
+2020-12-01 15:37:47.057  INFO 2852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 15:37:47.109  INFO 2852 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-01 15:37:47.147  INFO 2852 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-01 15:37:47.253  INFO 2852 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-01 15:37:47.259  WARN 2852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-01 15:37:47.330  INFO 2852 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-01 15:37:47.331  WARN 2852 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-01 15:37:47.538  INFO 2852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-01 15:37:47.695  INFO 2852 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-01 15:37:47.708  INFO 2852 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-01 15:37:48.091  INFO 2852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-01 15:37:48.123  INFO 2852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 15:37:48.125  INFO 2852 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-01 15:37:48.395  INFO 2852 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-01 15:37:48.401  INFO 2852 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-01 15:37:48.795  INFO 2852 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-01 15:37:48.801  INFO 2852 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 3.541 seconds (JVM running for 4.165)
+2020-12-01 15:37:51.478  INFO 2852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 15:37:51.479  INFO 2852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-01 15:37:51.480  INFO 2852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-01 15:37:51.505  INFO 2852 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:37:51.506  INFO 2852 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 15:37:51.635  INFO 2852 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 15:37:52.316  INFO 2852 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:37:52.317  INFO 2852 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 15:37:52.330  INFO 2852 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 15:37:52.391  INFO 2852 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 15:37:52.391  INFO 2852 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 15:37:52.457  INFO 2852 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:14:30.613  INFO 3620 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 3620 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-12-01 21:14:30.615  INFO 3620 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-12-01 21:14:30.651  INFO 3620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-01 21:14:30.652  INFO 3620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-01 21:14:31.191  INFO 3620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-01 21:14:31.259  INFO 3620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+2020-12-01 21:14:31.836  INFO 3620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-01 21:14:31.859  INFO 3620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-01 21:14:31.859  INFO 3620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 21:14:31.944  INFO 3620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-01 21:14:31.944  INFO 3620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
+2020-12-01 21:14:32.046  INFO 3620 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 21:14:32.092  INFO 3620 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-01 21:14:32.123  INFO 3620 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-01 21:14:32.207  INFO 3620 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-01 21:14:32.215  WARN 3620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-01 21:14:32.279  INFO 3620 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-01 21:14:32.280  WARN 3620 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-01 21:14:32.503  INFO 3620 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-01 21:14:32.651  INFO 3620 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-01 21:14:32.665  INFO 3620 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-01 21:14:32.995  INFO 3620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-01 21:14:33.026  INFO 3620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 21:14:33.028  INFO 3620 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-01 21:14:33.350  INFO 3620 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-01 21:14:33.356  INFO 3620 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-01 21:14:33.773  INFO 3620 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-01 21:14:33.784  INFO 3620 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 3.554 seconds (JVM running for 4.216)
+2020-12-01 21:14:43.854  INFO 3620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 21:14:43.855  INFO 3620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-01 21:14:43.856  INFO 3620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-01 21:14:43.888  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:43.888  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@5b83e273, {blogQuery=com.lavender.blog.vo.BlogQuery@5b83e273, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:14:43.959  WARN 3620 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 21:14:43.971  WARN 3620 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 21:14:43.977  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:14:44.795  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:44.796  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:14:44.810  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:14:47.590  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:47.590  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:14:47.594  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:14:47.930  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:47.930  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:14:47.942  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:14:51.316  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:51.317  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:14:51.317  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:14:51.583  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:51.583  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:14:51.595  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:14:53.857  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:53.858  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@6a61fa9c, {blogQuery=com.lavender.blog.vo.BlogQuery@6a61fa9c, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:14:53.878  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:14:54.281  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:14:54.281  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:14:54.294  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:15:41.517  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:41.517  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@4ba17c05, {blogQuery=com.lavender.blog.vo.BlogQuery@4ba17c05, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:15:41.534  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:15:41.883  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:41.883  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:15:41.896  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:15:43.529  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:43.530  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/16', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 16, {}]}
+2020-12-01 21:15:43.544  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:15:43.879  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:43.880  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:15:43.888  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:15:48.994  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:48.995  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/29', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 29, {}]}
+2020-12-01 21:15:49.006  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:15:49.327  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:49.327  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:15:49.332  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:15:53.450  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:53.451  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/14', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 14, {}]}
+2020-12-01 21:15:53.474  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:15:53.815  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:53.816  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:15:53.821  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:15:56.597  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:56.597  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/35', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[35, {}]}
+2020-12-01 21:15:56.675  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:15:57.027  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:15:57.027  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:15:57.032  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:16:00.932  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:00.933  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:16:00.941  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:16:01.247  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:01.247  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:16:01.257  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:16:03.819  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:03.820  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/16', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 16, {}]}
+2020-12-01 21:16:03.829  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:16:04.142  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:04.143  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:16:04.152  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:16:08.164  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:08.164  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:16:08.175  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:16:08.459  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:16:08.459  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:16:08.466  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:16:10.697 ERROR 3620 --- [http-nio-8080-exec-6] c.l.b.h.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/types/blog.type.id.Exception : {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "blog.type.id"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NumberFormatException: For input string: "blog.type.id"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:696)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	... 47 common frames omitted
+
+2020-12-01 21:16:10.698  WARN 3620 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "blog.type.id"]
+2020-12-01 21:17:00.733  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:00.734  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:17:00.746  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:01.041  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:01.041  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:01.045  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:02.189  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:02.189  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/16', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 16, {}]}
+2020-12-01 21:17:02.195  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:17:02.461  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:02.461  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:02.465  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:05.892  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:05.893  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 24, {}]}
+2020-12-01 21:17:05.899  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:06.149  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:06.149  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:06.161  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:12.477  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:12.477  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 24, {}]}
+2020-12-01 21:17:12.482  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:12.739  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:12.740  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:12.754  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:40.464  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:40.465  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:17:40.478  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:40.850  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:40.851  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:40.863  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:42.005  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:42.005  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/17', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 17, {}]}
+2020-12-01 21:17:42.013  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:42.271  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:42.271  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:42.284  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:44.685  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:44.685  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/30', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 30, {}]}
+2020-12-01 21:17:44.692  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:17:44.957  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:44.957  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:44.967  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:17:48.699  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:48.700  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:17:48.700  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:17:48.931  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:17:48.931  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:17:48.940  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:19:50.080  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:50.080  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@45f85f7a, {blogQuery=com.lavender.blog.vo.BlogQuery@45f85f7a, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:19:50.095  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:19:50.472  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:50.472  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:19:50.479  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:19:51.295  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:51.295  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:19:51.301  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:19:51.645  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:51.645  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:19:51.649  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:19:52.045  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:52.045  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@2d1fbc20, {blogQuery=com.lavender.blog.vo.BlogQuery@2d1fbc20, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:19:52.053  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:19:52.344  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:52.345  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:19:52.348  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:19:52.954  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:52.954  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:19:52.973  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:19:53.283  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:53.283  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:19:53.287  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:19:53.456  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:53.456  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:19:53.510  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:19:54.501  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:54.501  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:19:54.501  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:19:54.769  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:19:54.769  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:19:54.775  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:21:08.125  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:08.125  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:21:08.141  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:21:08.708  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:08.708  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:21:08.724  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:21:08.823  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:08.823  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:21:08.879  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:21:36.804  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:36.804  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:21:36.816  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:21:37.156  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:37.156  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:21:37.160  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:21:37.251  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:21:37.252  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:21:37.274  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:22:33.690  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:22:33.691  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:22:33.705  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:22:34.219  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:22:34.220  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:22:34.227  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:22:34.323  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:22:34.324  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:22:34.349  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:23:00.108  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:00.109  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:23:00.125  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:23:00.456  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:00.456  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:23:00.459  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:23:00.577  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:00.577  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:23:00.603  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:23:02.388  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:02.389  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:23:02.389  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:23:02.653  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:02.654  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:23:02.658  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:23:11.635  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:11.636  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/search', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], matplotlib, {}]}
+2020-12-01 21:23:11.644  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:search
+2020-12-01 21:23:11.972  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:23:11.972  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:23:11.981  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:23:15.454 ERROR 3620 --- [http-nio-8080-exec-3] c.l.b.h.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/search.Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1255)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-12-01 21:23:15.454  WARN 3620 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-01 21:23:32.734 ERROR 3620 --- [http-nio-8080-exec-5] c.l.b.h.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/search.Exception : {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:417)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1255)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-12-01 21:23:32.735  WARN 3620 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-12-01 21:25:37.869  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:37.870  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/search', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.search', args=[Page request [number: 0, size 8, sort: updateTime: DESC], matplotlib, {}]}
+2020-12-01 21:25:37.873  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:search
+2020-12-01 21:25:38.182  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:38.182  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:38.186  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:25:39.079  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:39.080  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/16', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 16, {}]}
+2020-12-01 21:25:39.092  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:25:39.385  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:39.385  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:39.392  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:25:42.492  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:42.492  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:25:42.492  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:25:42.740  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:42.740  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:42.749  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:25:48.252  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:48.252  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@37e3c5c2, {blogQuery=com.lavender.blog.vo.BlogQuery@37e3c5c2, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:25:48.260  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:25:48.534  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:48.534  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:48.538  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:25:51.276  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:51.276  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:25:51.284  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:subclass
+2020-12-01 21:25:51.594  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:51.594  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:51.600  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:25:53.671  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:53.672  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:25:53.679  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:25:53.965  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:25:53.966  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:25:53.973  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:28.398  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:28.398  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.lavender.blog.web.AchiveShowController.arhives', args=[{}]}
+2020-12-01 21:27:28.419  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:archives
+2020-12-01 21:27:28.724  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:28.724  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:27:28.728  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:30.005  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:30.006  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:27:30.025  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:27:30.392  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:30.392  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:27:30.395  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:30.471  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:30.471  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:27:30.490  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:27:32.659  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:32.659  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/28', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[28, {}]}
+2020-12-01 21:27:32.681  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:27:33.009  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:33.009  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:27:33.013  INFO 3620 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:33.079  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:33.079  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/28', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[28, {}]}
+2020-12-01 21:27:33.083  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:27:34.858  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:34.859  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/31', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[31, {}]}
+2020-12-01 21:27:34.872  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:27:35.138  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:35.138  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:27:35.141  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:35.230  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:35.230  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/31', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[31, {}]}
+2020-12-01 21:27:35.235  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:27:44.486  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:44.487  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:27:44.499  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:27:44.801  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:44.801  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:27:44.804  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:27:44.906  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:27:44.907  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:27:44.934  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:28:12.941  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:12.941  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.lavender.blog.web.AchiveShowController.arhives', args=[{}]}
+2020-12-01 21:28:12.955  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:archives
+2020-12-01 21:28:13.391  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:13.391  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:13.396  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:25.212  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:25.212  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.lavender.blog.web.AchiveShowController.arhives', args=[{}]}
+2020-12-01 21:28:25.221  INFO 3620 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:archives
+2020-12-01 21:28:25.580  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:25.580  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:25.593  INFO 3620 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:29.596  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:29.596  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-12-01 21:28:29.601  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:28:29.858  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:29.858  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:29.862  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:31.772  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:31.772  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/tags/18', ip='127.0.0.1', classMethod='com.lavender.blog.web.TagShowController.Tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 18, {}]}
+2020-12-01 21:28:31.778  INFO 3620 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:tags
+2020-12-01 21:28:32.038  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:32.038  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:32.041  INFO 3620 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:33.701  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:33.701  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/about_me', ip='127.0.0.1', classMethod='com.lavender.blog.web.AboutShowController.about_me', args=[]}
+2020-12-01 21:28:33.701  INFO 3620 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:about_me
+2020-12-01 21:28:33.962  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:33.963  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:33.966  INFO 3620 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:41.667  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:41.667  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:28:41.685  INFO 3620 --- [http-nio-8080-exec-10] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:28:41.978  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:41.979  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:28:41.981  INFO 3620 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:28:42.094  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:28:42.094  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:28:42.115  INFO 3620 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:33:47.565  INFO 6772 --- [restartedMain] com.lavender.blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 6772 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-12-01 21:33:47.570  INFO 6772 --- [restartedMain] com.lavender.blog.BlogApplication        : The following profiles are active: dev
+2020-12-01 21:33:47.604  INFO 6772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-12-01 21:33:47.604  INFO 6772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-12-01 21:33:48.123  INFO 6772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-01 21:33:48.204  INFO 6772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2020-12-01 21:33:48.830  INFO 6772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-01 21:33:48.836  INFO 6772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-01 21:33:48.837  INFO 6772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-01 21:33:48.926  INFO 6772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-01 21:33:48.926  INFO 6772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+2020-12-01 21:33:49.031  INFO 6772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-01 21:33:49.082  INFO 6772 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-01 21:33:49.122  INFO 6772 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-12-01 21:33:49.222  INFO 6772 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-01 21:33:49.232  WARN 6772 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-01 21:33:49.301  INFO 6772 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-01 21:33:49.302  WARN 6772 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-12-01 21:33:49.489  INFO 6772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-12-01 21:33:49.648  INFO 6772 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-01 21:33:49.661  INFO 6772 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-12-01 21:33:49.896  INFO 6772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-12-01 21:33:49.927  INFO 6772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-01 21:33:49.929  INFO 6772 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-01 21:33:50.354  INFO 6772 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-01 21:33:50.360  INFO 6772 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-01 21:33:50.758  INFO 6772 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-01 21:33:50.764  INFO 6772 --- [restartedMain] com.lavender.blog.BlogApplication        : Started BlogApplication in 3.605 seconds (JVM running for 4.299)
+2020-12-01 21:33:55.982  INFO 6772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-01 21:33:55.983  INFO 6772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-01 21:33:55.984  INFO 6772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2020-12-01 21:33:56.021  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:33:56.021  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], com.lavender.blog.vo.BlogQuery@5ae99cb, {blogQuery=com.lavender.blog.vo.BlogQuery@5ae99cb, org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]}
+2020-12-01 21:33:56.092  WARN 6772 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 21:33:56.102  WARN 6772 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-12-01 21:33:56.107  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:index
+2020-12-01 21:33:56.917  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:33:56.918  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:33:56.925  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:33:58.530  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:33:58.531  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:33:58.593  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:33:59.091  INFO 6772 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:33:59.091  INFO 6772 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:33:59.097  INFO 6772 --- [http-nio-8080-exec-4] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:33:59.240  INFO 6772 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:33:59.240  INFO 6772 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:33:59.299  INFO 6772 --- [http-nio-8080-exec-5] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:34:08.798  INFO 6772 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:34:08.798  INFO 6772 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.post', args=[Comment{id=null, nickname='sgd', email='473243887@qq.com', content='sadfasd', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@62344716]}
+2020-12-01 21:34:08.882  INFO 6772 --- [http-nio-8080-exec-8] com.lavender.blog.aspect.LogAspect       : Result:redirect:/comments/24
+2020-12-01 21:34:08.896  INFO 6772 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:34:08.897  INFO 6772 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:34:08.916  INFO 6772 --- [http-nio-8080-exec-9] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:36:28.713  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:36:28.713  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/Blog/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.blog', args=[24, {}]}
+2020-12-01 21:36:28.732  INFO 6772 --- [http-nio-8080-exec-1] com.lavender.blog.aspect.LogAspect       : Result:Blog
+2020-12-01 21:36:29.166  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:36:29.167  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lavender.blog.web.IndexController.newblogs', args=[{}]}
+2020-12-01 21:36:29.176  INFO 6772 --- [http-nio-8080-exec-2] com.lavender.blog.aspect.LogAspect       : Result:_fragments :: newblogList
+2020-12-01 21:36:29.254  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:36:29.255  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:36:29.284  INFO 6772 --- [http-nio-8080-exec-3] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList
+2020-12-01 21:36:37.376  INFO 6772 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:36:37.376  INFO 6772 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.post', args=[Comment{id=null, nickname='shap', email='473243887@qq.com', content='new one', avatar='null', createTime=null}, org.apache.catalina.session.StandardSessionFacade@62344716]}
+2020-12-01 21:36:37.408  INFO 6772 --- [http-nio-8080-exec-6] com.lavender.blog.aspect.LogAspect       : Result:redirect:/comments/24
+2020-12-01 21:36:37.414  INFO 6772 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : ------------doBefore-----------
+2020-12-01 21:36:37.414  INFO 6772 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : request:Requestlog{url='http://127.0.0.1:8080/comments/24', ip='127.0.0.1', classMethod='com.lavender.blog.web.CommentController.comments', args=[24, {}]}
+2020-12-01 21:36:37.436  INFO 6772 --- [http-nio-8080-exec-7] com.lavender.blog.aspect.LogAspect       : Result:Blog :: commentList

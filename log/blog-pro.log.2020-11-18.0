@@ -1,0 +1,6 @@
+2020-11-18 15:00:05.983  INFO 9816 --- [restartedMain] com.lavender.Blog.BlogApplication        : Starting BlogApplication using Java 1.8.0_271 on WIN7-2020NTZZTN with PID 9816 (F:\idea_workspace\Blog\target\classes started by Administrator in F:\idea_workspace\blog)
+2020-11-18 15:00:05.985  INFO 9816 --- [restartedMain] com.lavender.Blog.BlogApplication        : The following profiles are active: pro
+2020-11-18 15:00:07.048  WARN 9816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-18 15:00:07.246  WARN 9816 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-18 15:00:07.253  WARN 9816 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-11-18 15:00:07.351  INFO 9816 --- [restartedMain] com.lavender.Blog.BlogApplication        : Started BlogApplication in 1.747 seconds (JVM running for 2.414)

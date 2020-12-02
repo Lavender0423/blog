@@ -1,0 +1,22 @@
+#生产环境
+#数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&charaterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: Pwl5201314@
+  jpa:
+#    在生产环境禁止改动数据库
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+#日志
+logging:
+  level:
+    root: warn
+    com.lavender.Blog: info
+  file:
+    name: log/blog-pro.log
+server:
+  port: 8080
