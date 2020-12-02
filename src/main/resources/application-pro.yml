@@ -1,11 +1,11 @@
-#生产环境
+﻿#生产环境
 #数据库
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/blog?useUnicode=true&charaterEncoding=utf-8&serverTimezone=UTC
     username: root
-    password: Pwl5201314@
+    password: 
   jpa:
 #    在生产环境禁止改动数据库
     hibernate:
