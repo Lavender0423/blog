@@ -6,4 +6,5 @@ lavender's blog (constantly update)
 > 博客代码会不定期根据体验更新，主题也会根据心情更新，每次更新会重新上传分支
 
 - 博客采用SpringBoot + Thymeleaf + MySQL搭建
+- 博客园链接[在此](https://www.cnblogs.com/lavender-pansy/p/14076978.html)
 ---
